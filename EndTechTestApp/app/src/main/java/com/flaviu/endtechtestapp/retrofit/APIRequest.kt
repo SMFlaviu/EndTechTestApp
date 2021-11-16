@@ -1,6 +1,5 @@
 package com.flaviu.endtechtestapp.retrofit
 
-import com.flaviu.endtechtestapp.ProductResponse
 import io.reactivex.rxjava3.core.Observable
 import retrofit2.http.GET
 

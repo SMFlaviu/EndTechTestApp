@@ -1,11 +1,13 @@
-package com.flaviu.endtechtestapp
+package com.flaviu.endtechtestapp.ui.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.flaviu.endtechtestapp.data.ProductDetails
 import com.flaviu.endtechtestapp.databinding.ProductsListBinding
+import com.flaviu.endtechtestapp.util.EspressoIdlingResource
 
 class ProductsAdapter(private var productsList: List<ProductDetails>) :
     RecyclerView.Adapter<ProductsAdapter.ProductsViewHolder>() {
@@ -39,5 +41,7 @@ class ProductsAdapter(private var productsList: List<ProductDetails>) :
     fun refreshAdapterWithItems(newProductsList: List<ProductDetails>) {
         this.productsList = newProductsList
         notifyDataSetChanged()
+        //For testing
+        EspressoIdlingResource.decrement()
     }
 }

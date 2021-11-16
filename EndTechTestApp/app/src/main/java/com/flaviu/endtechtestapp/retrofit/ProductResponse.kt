@@ -1,4 +1,6 @@
-package com.flaviu.endtechtestapp
+package com.flaviu.endtechtestapp.retrofit
+
+import com.flaviu.endtechtestapp.data.ProductDetails
 
 data class ProductResponse (
     val products : List<ProductDetails>,
